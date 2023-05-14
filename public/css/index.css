@@ -7,11 +7,11 @@
 	background-color: green;
 }
 
-.lesson-four-task-three #lesson-four-task-three:visited {
+.lesson-four-task-three a:visited {
 	color: green
 }
 
-.lesson-four-task-four #sidebar:link {
+.lesson-four-task-four a:link {
 	color: red;
 }
 
