@@ -46,8 +46,10 @@
 				{{#with actions}}
 				<div class="form_content">
 					{{#each this}}
-					<h3 class="form_title">{{heading}}</h3>
-					<a class="button form_button" href="{{url}}">{{text}}</a>
+					<div>
+						<h3 class="form_title">{{heading}}</h3>
+						<a class="button form_button" href="{{url}}">{{text}}</a>
+					</div>
 					{{/each}}
 				</div>
 				{{/with}}

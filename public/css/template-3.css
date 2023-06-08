@@ -227,28 +227,25 @@
 
  /* FORM CODE */
  .form {
-	display: flex;
-	justify-content: space-between;
-	
-	align-items: center;
-
 	background: var(--color-primary);
-
+  
 	padding: var(--space-l);
-
+  
 	border-radius: var(--border-radius);
-
- }
-
- .form_content {
+  
+	}
+  
+	.form_content {
 	display: flex;
-	flex-direction: column;
 	gap: var(--space-m);
- }
+	align-items: center;
+	justify-content: space-between;
+	}
 
  .form_title {
 	font-size: 27px;
 	font-weight: var(--weight-title);
+
 	color: var(--color-white);
  }
 

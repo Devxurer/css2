@@ -230,23 +230,24 @@
 
  /* FORM CODE */
  .form {
+	background: var(--color-primary);
+  
+	padding: var(--space-l);
+  
+	border-radius: var(--border-radius);
+  
+	}
+  
+	.form_content {
 	display: flex;
-  justify-content: space-between;
-  gap: var(--space-xm);
-  background: var(--color-primary);
-  padding: var(--space-l);
-  border-radius: 8px;
-
- }
-
- .form_content {
-	 display: flex;
-  flex-direction: column;
-  gap: var(--space-m);
- }
+	gap: var(--space-m);
+	align-items: center;
+	justify-content: space-between;
+	}
 
  .form_title {
-	font-size: 27px;
+	font-size: 17px;
+	margin-bottom: 12px;
 	font-weight: var(--weight-title);
 	color: var(--color-white);
  }
