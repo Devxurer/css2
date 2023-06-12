@@ -1,0 +1,31 @@
+			{{!-- HEADER --}}
+			<header class="header">
+				<div class="">
+					{{> logo}}
+				</div>
+				<nav class="header_nav">
+					<div class="header_nav_right">
+						
+							{{> nav list=header}}
+					</div>
+					
+				</nav>
+			</header>
+			
+			
+
+			{{!-- FOOTER --}}
+			<footer class="row footer">
+				<div class="">
+					{{> logo}}
+					<span class="foter_copyright">Copyright 2023-2024</span>
+				</div>
+				{{#each footer}}
+				<div class="">
+					<span class="footer_title">{{title}}</span>
+					{{> nav list=links isVertical=true}}
+				</div>
+				{{/each}}
+			</footer>
+		
+	

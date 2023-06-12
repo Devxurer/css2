@@ -1,0 +1,124 @@
+:root {
+	--space-s: 8px;
+	--space-m: 12px;
+	--space-xm: 16px;
+	--space-l: 24px;
+	--space-b: 36px;
+ 
+	--size-xs: 12px;
+	--size-s: 14px;
+	--size-d: 16px;
+	--size-l: 20px;
+	--size-b: 24px;
+ 
+	--color-border: #d3dee9;
+	--color-border2: #dee2e6;
+	--color-primary: rgb(46, 46, 250);
+	--color-white: #fff;
+	--color-title: #212529;
+	--color-text: #5a5a5a;
+	--color-text2: #6c757d;
+	--color-background: #f8f9fa;
+ 
+	--border-radius-d: 12px;
+	--border-radius-s: 4px;
+ 
+	--weight-title-b: 700;
+	--weight-title: 500;
+	--weight-text: 400;
+	--page-width: 1000px;
+	--page-color: #111827;
+ }
+ /* ========================= */
+ .page {
+	background: var(--page-color);
+	padding: 0 15px;
+	display: flex;
+	justify-content: center;
+	font-family: Roboto, serif;
+ }
+ 
+ .page_content {
+	max-width: var(--page-width);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+ }
+ /* ========================== */
+ 
+ .header {
+	padding: var(--space-l) 0;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid var(--color-border);
+ 
+	position: sticky;
+	width: var(--page-width);
+	top: 0;
+	background-color: var(--page-color);
+ }
+ 
+ .logo {
+	font-size: 17px;
+	color: var(--color-white);
+	background: var(--color-primary);
+	width: 56px;
+	height: 30px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+ 
+ .nav {
+	display: flex;
+ }
+ 
+ .nav_inline {
+	gap: var(--space-l);
+ }
+ 
+ .nav_vertical {
+	gap: var(--space-xm);
+	flex-direction: column;
+ }
+ 
+ .nav_link {
+	color: var(--color-text);
+	font-size: var(--size-d);
+	text-decoration: none;
+	line-height: 100%;
+ 
+	transition-property: color;
+	transition-duration: 1s;
+ }
+ 
+ .nav_link:hover {
+	text-decoration: underline;
+	color: var(--color-primary);
+ }
+ 
+ .footer {
+	padding: var(--space-l) 0;
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid var(--color-border);
+ }
+ 
+ .foter_copyright {
+	font-size: var(--size-s);
+	color: var(--color-text);
+	display: block;
+	margin-top: var(--space-l);
+ }
+ 
+ .footer_title {
+	font-size: var(--size-l);
+	color: var(--color-title);
+	display: block;
+	margin-bottom: var(--space-l);
+	font-weight: var(--weight-title);
+ }
+ 
+ 
