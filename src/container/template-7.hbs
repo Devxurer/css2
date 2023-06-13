@@ -1,31 +1,80 @@
-			{{!-- HEADER --}}
-			<header class="header">
-				<div class="">
-					{{> logo}}
-				</div>
-				<nav class="header_nav">
-					<div class="header_nav_right">
-						
-							{{> nav list=header}}
-					</div>
-					
-				</nav>
-			</header>
-			
-			
+{{! HEADER }}
+{{#with header}}
+  <div class='header_inner'>
+    <div class='logo'>
+      <a
+        class='logo_link'
+        href='#'
+        target='_blank'
+      >{{brandName}}</a>
+    </div>
+    <nav class='nav'>
+      {{#each links}}
+        <ul class='nav_list'>
+          <li class='nav_item'>
+            <a class='nav_link' href='{{url}}'>{{text}}</a>
+          </li>
+        </ul>
+      {{/each}}
+    </nav>
+  </div>
+  <div class='header_info'>
+    <div class='header_infoText'>
+      <span class='badge'>Ad</span>
+      <span class='service'>{{ad.text}}</span>
+      <span class='url'>{{ad.url}}</span>
+    </div>
+    <span class='value'>Users online: {{userOnline}}</span>
+  </div>
+{{/with}}
 
-			{{!-- FOOTER --}}
-			<footer class="row footer">
-				<div class="">
-					{{> logo}}
-					<span class="foter_copyright">Copyright 2023-2024</span>
-				</div>
-				{{#each footer}}
-				<div class="">
-					<span class="footer_title">{{title}}</span>
-					{{> nav list=links isVertical=true}}
-				</div>
-				{{/each}}
-			</footer>
-		
-	
+{{! Header END }}
+
+{{! FIRST CONTENT ON PAGE (hero)}}
+<div class='hero'>
+  {{#with hero}}
+    <div class='h1_hero'>{{title}}</div>
+    <p class='hero_text'>{{description}}</p>
+    <div class='hero_button'>
+      {{#with button}}
+        <a
+          href='{{url}}'
+          class='hero_linksButton'
+        >{{text}}</a>
+      {{/with}}
+    </div>
+  {{/with}}
+</div>
+
+{{! END OF FIRST CONTENT ON PAGE (hero) }}
+
+{{! About block }}
+<div class='about'>
+  {{#with about}}
+    <h1 class='about_title'>{{heading}}</h1>
+    <p class='about_text'>{{info}}</p>
+  {{/with}}
+</div>
+
+{{! End of About }}
+
+{{! /* ====== Articles ====== */ }}
+
+<div class='articles'>
+  <div class='articlesHead'>
+    <h2 class='articlesText'>Our Articles</h2>
+    <button class='artcilesButton'>View All</button>
+  </div>
+  {{#each articles}}
+    <div class='arcitlesCard'>
+      <div class='imgBox'>
+        <img class='cardImg' src='{{photo}}' />
+      </div>
+      <h2 class='cardName'>{{name}}</h2>
+      <p class='cardText'>{{description}}</p>
+      <button class='cardButton'>Read All</button>
+    </div>
+  {{/each}}
+</div>
+
+{{! /* ======= Footer ======== */ }}
