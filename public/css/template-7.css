@@ -264,6 +264,8 @@
 	.arcitlesCard {
 		display: flex;
 		flex-direction: row;
+		width: 1184;
+		height: 488;
 		
 	 }
 	 
@@ -303,6 +305,8 @@
 		width: 362px;
 		height: 84px;
 		margin-top: 16px;
+		
+		
 
 		color: #9CA3AF;
 
@@ -317,6 +321,8 @@
 	.cardButton {
 		background: #885FFB;
 		border-radius: 10px;
+
+		margin-top: 16px;
 
 		width: 85px;
 		height: 30px;
@@ -352,12 +358,28 @@
 	margin-top: var(--space-l);
  }
  
- .footer_title {
-	font-size: var(--size-l);
-	color: var(--color-title);
-	display: block;
-	margin-bottom: var(--space-l);
+ .navFooter {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+ }
+
+ .nav_linkF {
 	font-weight: var(--weight-title);
+	font-size: var(--size-d);
+	line-height: 1;
+	color: var(--color-white);
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition-property: color, border-bottom;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+	padding-bottom: 6px;
+ }
+
+ .copyright {
+	color: var(--color-white);
+	
  }
  
  

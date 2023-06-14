@@ -68,13 +68,15 @@
 
   <div class='arcitlesCard'>
     {{#each articles}}
-      <div class='imgBox'>
-        <img class='cardImg' src='{{photo}}' />
-      </div>
-      <div class='textBox'>
-        <h2 class='cardName'>{{name}}</h2>
-        <p class='cardText'>{{description}}</p>
-        <button class='cardButton'>Read All</button>
+      <div>
+        <div class='imgBox'>
+          <img class='cardImg' src='{{photo}}' />
+        </div>
+        <div class='textBox'>
+          <h2 class='cardName'>{{name}}</h2>
+          <p class='cardText'>{{description}}</p>
+          <button class='cardButton'>Read All</button>
+        </div>
       </div>
     {{/each}}
   </div>
@@ -82,3 +84,20 @@
 </div>
 
 {{! /* ======= Footer ======== */ }}
+{{#with footer}}
+  <div class='footer'>
+    <nav class='navFooter'>
+      {{#each pages}}
+        <ul class='nav_listF'>
+          <li class='nav_itemF'>
+            <a
+              class='nav_linkF'
+              href='{{path}}'
+            >{{name}}</a>
+          </li>
+        </ul>
+      {{/each}}
+    </nav>
+    <div class='copyright'>{{copyright}}</div>
+  </div>
+{{/with}}
