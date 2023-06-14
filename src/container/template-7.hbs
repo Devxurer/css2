@@ -65,16 +65,20 @@
     <h2 class='articlesText'>Our Articles</h2>
     <button class='artcilesButton'>View All</button>
   </div>
-  {{#each articles}}
-    <div class='arcitlesCard'>
+
+  <div class='arcitlesCard'>
+    {{#each articles}}
       <div class='imgBox'>
         <img class='cardImg' src='{{photo}}' />
       </div>
-      <h2 class='cardName'>{{name}}</h2>
-      <p class='cardText'>{{description}}</p>
-      <button class='cardButton'>Read All</button>
-    </div>
-  {{/each}}
+      <div class='textBox'>
+        <h2 class='cardName'>{{name}}</h2>
+        <p class='cardText'>{{description}}</p>
+        <button class='cardButton'>Read All</button>
+      </div>
+    {{/each}}
+  </div>
+
 </div>
 
 {{! /* ======= Footer ======== */ }}

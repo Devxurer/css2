@@ -261,26 +261,27 @@
 		color: var(--color-white);
 	}
 
-	.articlesCard {
-			display: flex;
-			gap: var(--space-l);
-			flex-direction: row;
-	}
+	.arcitlesCard {
+		display: flex;
+		flex-direction: row;
+		
+	 }
+	 
 
 	.cardImg {
 		width: 300px;
 		height: 180px;
 		margin-top: 16px;
-
-		
-
 		border-radius: 16px;
 	}
 
-	.img_box {
+	.textBox {
 		display: flex;
+		flex-direction: column;
+	
 	}
 
+	
 	.cardName {
 		font-family: 'Roboto';
 		font-style: normal;
@@ -291,6 +292,11 @@
 		margin-top: 16px;
 
 		color: var(--color-white);
+
+		
+		
+
+		
 	}
 
 	.cardText {
@@ -305,6 +311,7 @@
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 150%;
+		
 	}
 
 	.cardButton {
