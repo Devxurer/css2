@@ -1,0 +1,322 @@
+<html>
+
+  <head>
+    <title>
+      Dashboard
+    </title>
+    <meta charset='utf-8' />
+
+    <link
+      rel='apple-touch-icon'
+      sizes='180x180'
+      href='/fav/apple-touch-icon.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='32x32'
+      href='/fav/favicon-32x32.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='16x16'
+      href='/fav/favicon-16x16.png'
+    />
+    <link rel='manifest' href='/fav/site.webmanifest' />
+    <link
+      rel='mask-icon'
+      href='/fav/safari-pinned-tab.svg'
+      color='#5bbad5'
+    />
+    <meta
+      name='msapplication-TileColor'
+      content='#da532c'
+    />
+    <meta name='theme-color' content='#ffffff' />
+
+    <link href='css/normalize.css' rel='stylesheet' />
+
+    <link href='css/dashboard.css' rel='stylesheet' />
+
+    <meta
+      name='viewport'
+      content='viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    />
+
+  </head>
+
+  {{! Основний контент  }}
+
+  <body>
+
+    <div class='page page--dashboard'>
+
+      {{! Бокова панель сторінки }}
+      <aside
+        class='page__aside aside vertical vertical--big'
+      >
+        <div class='text aside__logo'>
+          Sidebar
+        </div>
+        <nav class='vertical vertical--small'>
+          <a
+            href='#'
+            class='nav-button nav-button--active click'
+          >
+            <span
+              class='icon nav-button__icon'
+              style='background-image: url(/img/svg/nav/home.svg)'
+            ></span>
+            <span class='text text--light'>Home</span>
+
+          </a>
+          {{! Second button }}
+          <a href='#' class='nav-button nav-button click'>
+            <span
+              class='icon nav-button__icon'
+              style='background-image: url(/img/svg/nav/orders.svg)'
+            ></span>
+            <span class='text text--light'>Orders</span>
+
+          </a>
+          {{! Third button }}
+          <a href='#' class='nav-button nav-button click'>
+            <span
+              class='icon nav-button__icon'
+              style='background-image: url(/img/svg/nav/products.svg)'
+            ></span>
+            <span class='text text--light'>Products</span>
+          </a>
+          {{! end of button }}
+          <div class='relative click'>
+            <div
+              class='field field--select field--select-aside click'
+            >
+              <span
+                class='text text--light'
+              >Choose...</span>
+              <select class='field__select'>
+                <option value='Home'>Home</option>
+                <option value='Calendary'>Calendary</option>
+                <option value='Wallet'>Wallet</option>
+                <option value='Terms of Issue'>Terms of
+                  Issue</option>
+              </select>
+              <span
+                class='icon arrow-icon'
+                style='background-image: url(/img/svg/tools/arrow.svg)'
+              ></span>
+            </div>
+          </div>
+        </nav>
+      </aside>
+
+      {{! Шапка сторінки }}
+      <header class='header'>
+        <div class='layout header__content text--small'>
+          <div class='header__search relative'>
+            <input
+              type='text'
+              placeholder='Search'
+              class='text field field--header'
+            />
+            <span
+              class='icon header__icon--search'
+              style='background-image: url(/img/svg/header/search.svg)'
+            ></span>
+            <span
+              class='icon icon--header--settings icon--button icon--color-blue click'
+              style='background-image: url(/img/svg/header/settings.svg)'
+            ></span>
+          </div>
+          <div class='header__icon-list'>
+            <ul class='icon-list'>
+              <li class='icon-list__item click'>
+                <a
+                  class='icon-list__link icon icon-signal--active'
+                  href='#'
+                  style="background-image: url('img/svg/tools/share.svg"
+                ></a>
+              </li>
+              <li class='icon-list__item click'>
+                <a
+                  class='icon-list__link icon icon-translate--active'
+                  href='#'
+                  style="background-image: url('img/svg/tools/translate.svg"
+                ></a>
+              </li>
+              <li class='icon-list__item click'>
+                <a
+                  class='icon-list__link icon icon-bell--active'
+                  href='#'
+                  style="background-image: url('img/svg/tools/notif.svg"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      {{! Основний контент сторінки }}
+      <main class='main'>
+        <div class='layout'>
+          <section class='box analytic__block'>
+            {{! перша картка }}
+            <div
+              class='analytic analytic--double analytic--blue'
+            >
+              <span
+                class='icon analytic__button icon--button icon--color-blue click'
+                style='background-image: url(/img/svg/analytic/order.svg)'
+              ></span>
+              <div
+                class='realtive vertical vertical--small'
+              >
+                <div
+                  class='analytic__title text text--light'
+                >$961</div>
+                <div
+                  class='text text--small text--lighter'
+                >Total Order</div>
+              </div>
+            </div>
+            {{! Друга картка }}
+            <div
+              class='analytic analytic--double analytic--purple'
+            >
+              <span
+                class='icon analytic__button icon--button icon--color-purpledark click'
+                style='background-image: url(/img/svg/analytic/dollar.svg)'
+              ></span>
+              <div
+                class='realtive vertical vertical--small'
+              >
+                <div
+                  class='analytic__title text text--light'
+                >$500.00</div>
+                <div
+                  class='text text--small text--lighter'
+                >Total earning</div>
+              </div>
+            </div>
+            <div
+              class='analytic analytic--small analytic--blue'
+            >
+              <span
+                class='icon analytic__button icon--button icon--color-blue click'
+                style='background-image: url(/img/svg/analytic/dollar.svg)'
+              ></span>
+              <div class='vertical vertical--sup-small'>
+                <div
+                  class='analytic__title-small text text--light'
+                >$203k</div>
+                <div
+                  class='text text--small text--lighter'
+                >Total Income</div>
+              </div>
+            </div>
+            <div
+              class='analytic analytic--small analytic--border'
+            >
+              <span
+                class='icon analytic__button icon--button icon--color-yellow click'
+                style='background-image: url(/img/svg/analytic/shop.svg)'
+              ></span>
+              <div class='vertical vertical--sup-small'>
+                <div
+                  class='analytic__title-small text text--dark'
+                >$203k</div>
+                <div
+                  class='text text--small text--dark-lighter'
+                >Total Income</div>
+              </div>
+            </div>
+          </section>
+          <section class='box purchase__block'>
+            <div class='purchase__list'>
+              <h1 class='purchase__title text'>Purchase list</h1>
+              <hr class='divider' />
+              {{! first }}
+              <div class='info__purchase'>
+                <div class='info--gap'>
+                  <div class='info__id text'>
+                    ID437661
+                  </div>
+                  <div class='info_date text'>
+                    May 11, 2023, 14:21
+                  </div>
+                </div>
+                <div class='info--gap'>
+                  <div class='info__id text'>
+                    PHILIPS Essential
+                  </div>
+                  <div class='info_date text'>
+                    HD9200/90
+                  </div>
+                </div>
+                <div class='info--gap'>
+                  <div class='info__id text'>
+                    543 USD
+                  </div>
+                  <div
+                    class='info_date text text-successful'
+                  >
+                    Pay by Stripe
+                  </div>
+                </div>
+                <div class='info--gap'>
+                  <div class='info__id text'>
+                    Customer
+                  </div>
+                  <div class='info_date text'>
+                    dima@com.ua
+                  </div>
+                </div>
+              </div>
+              <hr class='divider' />
+              <div class='info__purchase'>
+                <div class='info--gap'>
+                  <div class='info__id text'>
+                    ID437661
+                  </div>
+                  <div class='info_date text'>
+                    May 11, 2023, 14:21
+                  </div>
+                </div>
+                <div class='info--gap'>
+                  <div class='info__id text'>
+                    AirOn ProCam
+                  </div>
+                  <div class='info_date text'>
+                    7/8 USB Type-C
+                  </div>
+                </div>
+                <div class='info--gap'>
+                  <div class='info__id text'>
+                    132.32 EUR
+                  </div>
+                  <div class='info_date text text-warning'>
+                    Not paid
+                  </div>
+                </div>
+                <div class='info--gap'>
+                  <div class='info__id text'>
+                    Customer
+                  </div>
+                  <div class='info_date text'>
+                    robin@com.de
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>test</div>
+          </section>
+        </div>
+      </main>
+
+    </div>
+
+  </body>
+
+</html>
