@@ -268,6 +268,12 @@ body {
 		grid-template-rows: 1fr 1fr;
 	}
 
+	.purchase__block {
+		display: grid;
+		grid-template-columns: 1fr 480px;
+		margin-top: 40px;
+	}
+
 	.analytic__button {
 		width: 44px;
 		height: 44px;
